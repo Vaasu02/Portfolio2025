@@ -40,17 +40,17 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
-        <title>Vasu's Portfolio - Full Stack Web Developer</title>
+        <title>Vasu&apos;s Portfolio - Full Stack Web Developer</title>
         <meta name="description" content="Welcome to Vasu&apos;s portfolio. Explore innovative web projects, ThreeJS visualizations, and full-stack development skills from a UIT RGPV graduate." />
         <meta name="keywords" content="Vasu portfolio, ThreeJS portfolio, UIT RGPV college, full stack web developer portfolio, React developer, Node.js developer, JavaScript expert, responsive web design, UI/UX design, web application development, software engineering projects" />
         <meta name="author" content="Vasu" />
-        <meta property="og:title" content="Vasu's Portfolio - Full Stack Web Developer" />
+        <meta property="og:title" content="Vasu&apos;s Portfolio - Full Stack Web Developer" />
         <meta property="og:description" content="Discover Vasu&apos;s portfolio showcasing cutting-edge web development projects, ThreeJS visualizations, and full-stack expertise. UIT RGPV graduate with a passion for innovative web solutions." />
         <meta property="og:type" content="website" />
         {/* <meta property="og:url" content={`https://${process.env.NEXT_PUBLIC_VERCEL_URL}`} /> */}
         <meta property="og:image" content="/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Vasu's Portfolio - Full Stack Web Developer" />
+        <meta name="twitter:title" content="Vasu&apos;s Portfolio - Full Stack Web Developer" />
         <meta name="twitter:description" content="Explore Vasu&apos;s portfolio featuring impressive web projects, ThreeJS implementations, and full-stack development skills. UIT RGPV alumnus creating innovative digital experiences." />
         <meta name="twitter:image" content="/twitter-image.jpg" />
         {/* <link rel="canonical" href={`https://${process.env.NEXT_PUBLIC_VERCEL_URL}${router.asPath}`} /> */}
