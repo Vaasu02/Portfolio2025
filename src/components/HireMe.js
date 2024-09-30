@@ -21,7 +21,7 @@ const HireMe = () => {
         <Modal isVisible={showModal} onClose={()=>setShowModal(false)}>
           <div className='py-6 px-6 lg:px-8 text-left'>
             <h3 className='mb-4 text-xl font-medium text-gray-900'>
-              Let's Connect
+              Let&apos;s Connect
             </h3>
             <form className='space-y-6' action="https://api.web3forms.com/submit" method="POST">
               <div>

@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
-        <title>Vasu's Portfolio - Full Stack Web Developer</title>
+        <title>Vasu&apos;s Portfolio - Full Stack Web Developer</title>
         <meta name="description" content="Welcome to Vasu's portfolio. Explore innovative web projects, ThreeJS visualizations, and full-stack development skills from a UIT RGPV graduate." />
         <meta name="keywords" content="Vasu portfolio, ThreeJS portfolio, UIT RGPV college, full stack web developer portfolio, React developer, Node.js developer, JavaScript expert, responsive web design, UI/UX design, web application development, software engineering projects" />
         <meta name="author" content="Vasu" />
