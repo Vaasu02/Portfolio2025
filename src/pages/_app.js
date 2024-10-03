@@ -47,13 +47,11 @@ export default function App({ Component, pageProps }) {
         <meta property="og:title" content="Vasu&apos;s Portfolio - Full Stack Web Developer" />
         <meta property="og:description" content="Discover Vasu&apos;s portfolio showcasing cutting-edge web development projects, ThreeJS visualizations, and full-stack expertise. UIT RGPV graduate with a passion for innovative web solutions." />
         <meta property="og:type" content="website" />
-        {/* <meta property="og:url" content={`https://${process.env.NEXT_PUBLIC_VERCEL_URL}`} /> */}
         <meta property="og:image" content="/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Vasu&apos;s Portfolio - Full Stack Web Developer" />
         <meta name="twitter:description" content="Explore Vasu&apos;s portfolio featuring impressive web projects, ThreeJS implementations, and full-stack development skills. UIT RGPV alumnus creating innovative digital experiences." />
         <meta name="twitter:image" content="/twitter-image.jpg" />
-        {/* <link rel="canonical" href={`https://${process.env.NEXT_PUBLIC_VERCEL_URL}${router.asPath}`} /> */}
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <meta name="google" content="nositelinkssearchbox" />
