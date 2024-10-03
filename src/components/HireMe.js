@@ -66,7 +66,7 @@ const HireMe = () => {
       <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
         <div className='flex flex-col h-full w-full bg-gradient-to-br from-blue-100 to-purple-100 dark:from-gray-800 dark:to-gray-900 rounded-lg shadow-xl'>
           <div className='flex-grow overflow-y-auto p-4 sm:p-6'>
-            <h2 className='text-center text-3xl font-bold text-gray-800 dark:text-white mb-6'>Let's Connect</h2>
+            <h2 className='text-center text-3xl font-bold text-gray-800 dark:text-white mb-6'>Let&apos;s Connect</h2>
             {error && (
               <p className="text-red-500 font-semibold text-lg mb-4">{error}</p>
             )}
