@@ -56,13 +56,12 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Junior Web developer"
-            company="Eazygrad"
-            companyLink="https://www.eazygrad.com"
-            time=" May 2023 - July 2023"
-            address="Remote"
-            work="Worked on a team responsible for developing new features for building student Portal, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."
+            position="Software Developer Intern"
+            company="MindTide.Ai"
+            companyLink="https://www.mindtide.ai"
+            time=" September 2024 - Present"
+            address="San Francisco, USA"
+            work="Working on Developing a new product for the company.For that Using stack of Python, FastAPI, React, NextJs, TailwindCSS, Docker, AWS.Developing a product called Buzzcraft for the company that is a web application that allows users to connect their social media accounts and post content on their behalf. "
           />
           <Details
             position="Fundraising Internship"
@@ -71,6 +70,15 @@ const Experience = () => {
             time=" July 2024 - August 2024"
             address="Shanti Colony, Delhi-110047, India"
             work="Developed strong communication and organizational skills by coordinating events, reaching out to potential donors, and creating compelling campaigns to raise awareness for causes I cared about, through this experience, I gained a deeper understanding of the importance of persistence, strategic planning"
+          />
+          <Details
+            position="Junior Web developer"
+            company="Eazygrad"
+            companyLink="https://www.eazygrad.com"
+            time=" May 2023 - July 2023"
+            address="Remote"
+            work="Worked on a team responsible for developing new features for building student Portal, including improving the accuracy and relevance of search results and 
+                    developing new tools for data analysis and visualization."
           />
           
         </ul>
