@@ -55,32 +55,38 @@ const Experience = () => {
         />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-          <Details
+        <Details
             position="Software Developer Intern"
-            company="MindTide.Ai"
-            companyLink="https://www.mindtide.ai"
-            time=" September 2024 - Present"
+            company="Mindtide.ai"
+            companyLink="https://test.buzzcraft.io/"
+            time="October 2024 - Present"
             address="San Francisco, USA"
-            work="Working on Developing a new product for the company.For that Using stack of Python, FastAPI, React, NextJs, TailwindCSS, Docker, AWS.Developing a product called Buzzcraft for the company that is a web application that allows users to connect their social media accounts and post content on their behalf. "
+            work="Developed BuzzCraft, a social media automation platform for content creation and scheduling. Enhanced platform responsiveness by 25% using FastAPI and Vue.js. Optimized API endpoints, boosting social media data integration by 20%. Built a real-time post scheduling feature with calendar view, increasing user engagement."
           />
           <Details
             position="Fundraising Internship"
             company="Tare Zameen Foundation"
             companyLink="https://drive.google.com/file/d/1NMgkP6GVVV3980W-eciZ89OfV6viuxrX/view?usp=sharing"
-            time=" July 2024 - August 2024"
+            time="July 2024 - August 2024"
             address="Shanti Colony, Delhi-110047, India"
             work="Developed strong communication and organizational skills by coordinating events, reaching out to potential donors, and creating compelling campaigns to raise awareness for causes I cared about, through this experience, I gained a deeper understanding of the importance of persistence, strategic planning"
+          />
+          <Details
+            position="Freelance Web Developer"
+            company="Freelance"
+            companyLink="#"
+            time="July 2023 - August 2024"
+            address="Remote"
+            work="Developed responsive e-commerce websites using React.js, Tailwind CSS, and Redux Toolkit. Integrated payment gateways like Stripe and implemented SEO best practices, increasing sales and traffic by 30% and 40%, respectively. Designed custom admin dashboards to enhance data management efficiency for clients."
           />
           <Details
             position="Junior Web developer"
             company="Eazygrad"
             companyLink="https://www.eazygrad.com"
-            time=" May 2023 - July 2023"
+            time="Jan 2023 - June 2023"
             address="Remote"
-            work="Worked on a team responsible for developing new features for building student Portal, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."
+            work="Worked on a team responsible for developing new features for building student Portal, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
           />
-          
         </ul>
       </div>
     </div>
