@@ -12,6 +12,7 @@ import p3image from "../../public/images/projects/zoom.png";
 import p4image from "../../public/images/projects/ai.png";
 import p5image from "../../public/images/projects/blog.png";
 import p6image from "../../public/images/projects/chat-application.png";
+import p7image from "../../public/images/projects/image.png";
 
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -141,6 +142,18 @@ const projects = () => {
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProjects
+                title="Movie Ticket Booking Platform with Inngest"
+                img={p7image}
+                summary="A full-stack movie booking platform built with React, Node.js, MongoDB, Stripe, Clerk, TMDB API, and Inngest. 
+                        Features real-time seat selection and Stripe payment integration. Includes admin dashboard for managing shows, bookings, and analytics, 
+                        with TMDB API integration for movie data and trailers. Implements Inngest background jobs for automated notifications and booking cleanup with responsive design."
+                link="https://quickshowbooking.vercel.app"
+                github="https://github.com/Vaasu02/Movie-Booking-App-With-INNGEST"
+                type="Featured Project"
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProjects
                 title="Food Ordering Application"

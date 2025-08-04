@@ -56,20 +56,20 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
         <Details
+            position="Technical Intern"
+            company="Walnut School"
+            companyLink="https://erpnext-demo.frappe.cloud"
+            time="May 2025 - July 2025"
+            address="Remote"
+            work="Enhanced student profile system using Frappe Framework with custom DocTypes and server scripts.Developed APIs with FastAPI and React.js, improving data efficiency by 35%. Implemented Frappe workflows for student data management, reducing processing time by 30%."
+          />
+        <Details
             position="Software Developer Intern"
             company="Mindtide.ai"
             companyLink="https://test.buzzcraft.io/"
-            time="October 2024 - Present"
+            time="October 2024 - April 2025"
             address="San Francisco, USA"
             work="Developed BuzzCraft, a social media automation platform for content creation and scheduling. Enhanced platform responsiveness by 25% using FastAPI and Vue.js. Optimized API endpoints, boosting social media data integration by 20%. Built a real-time post scheduling feature with calendar view, increasing user engagement."
-          />
-          <Details
-            position="Fundraising Internship"
-            company="Tare Zameen Foundation"
-            companyLink="https://drive.google.com/file/d/1NMgkP6GVVV3980W-eciZ89OfV6viuxrX/view?usp=sharing"
-            time="July 2024 - August 2024"
-            address="Shanti Colony, Delhi-110047, India"
-            work="Developed strong communication and organizational skills by coordinating events, reaching out to potential donors, and creating compelling campaigns to raise awareness for causes I cared about, through this experience, I gained a deeper understanding of the importance of persistence, strategic planning"
           />
           <Details
             position="Freelance Web Developer"
@@ -84,7 +84,7 @@ const Experience = () => {
             company="Eazygrad"
             companyLink="https://www.eazygrad.com"
             time="Jan 2023 - June 2023"
-            address="Remote"
+            address="Delhi, India"
             work="Worked on a team responsible for developing new features for building student Portal, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
           />
         </ul>
