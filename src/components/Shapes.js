@@ -2,22 +2,34 @@
 
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
-import { ContactShadows, Float, Environment } from "@react-three/drei";
+import { ContactShadows, Float, Environment, useProgress } from "@react-three/drei";
 import { Suspense, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import Shapes3DLoader from "./Shapes3DLoader";
 
 export default function Shapes() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
-    <div className="row-span-1 row-start-1 -mt-9 aspect-square  md:col-span-1 md:col-start-2 md:mt-0">
+    <div className="row-span-1 row-start-1 -mt-9 aspect-square  md:col-span-1 md:col-start-2 md:mt-0 relative">
+      {!isLoaded && (
+        <div className="absolute inset-0 z-10 flex items-center justify-center bg-light/90 dark:bg-dark/90 backdrop-blur-sm">
+          <Shapes3DLoader />
+        </div>
+      )}
       <Canvas
         className="z-0"
         shadows
         gl={{ antialias: false }}
         dpr={[1, 1.5]}
         camera={{ position: [0, 0, 25], fov: 30, near: 1, far: 40 }}
+        onCreated={() => {
+          // Canvas is ready, but we'll wait a bit for geometries to load
+          setTimeout(() => setIsLoaded(true), 1500);
+        }}
       >
         <Suspense fallback={null}>
-          <Geometries />
+          <Geometries onLoad={() => setIsLoaded(true)} />
           <ContactShadows
             position={[0, -3.5, 0]}
             opacity={0.65}
@@ -32,7 +44,7 @@ export default function Shapes() {
   );
 }
 
-function Geometries() {
+function Geometries({ onLoad }) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -103,6 +115,16 @@ function Geometries() {
       metalness: 0.5,
     }),
   ];
+
+  useEffect(() => {
+    if (onLoad) {
+      // Call onLoad after geometries are created and materials are ready
+      const timer = setTimeout(() => {
+        onLoad();
+      }, 1000); // Small delay to ensure everything is rendered
+      return () => clearTimeout(timer);
+    }
+  }, [onLoad]);
 
   return geometries.map(({ position, mobilePosition, r, geometry }) => (
     <Geometry

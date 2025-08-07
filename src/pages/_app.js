@@ -5,8 +5,6 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
-import LoadingPage from "@/components/LoadingPage";
 
 const monstserrat = Montserrat({
   subsets: ["latin"],
@@ -15,25 +13,6 @@ const monstserrat = Montserrat({
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  const [loading, setLoading] = useState(true);
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    const loadAssets = async () => {
-      // Simulate asset loading
-      for (let i = 0; i <= 100; i++) {
-        await new Promise((resolve) => setTimeout(resolve, 50));
-        setProgress(i);
-      }
-      setLoading(false);
-    };
-
-    loadAssets();
-  }, []);
-
-  if (loading) {
-    return <LoadingPage progress={progress} />;
-  }
 
   return (
     <>
