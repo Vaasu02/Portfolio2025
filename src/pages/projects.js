@@ -13,6 +13,7 @@ import p4image from "../../public/images/projects/ai.png";
 import p5image from "../../public/images/projects/blog.png";
 import p6image from "../../public/images/projects/chat-application.png";
 import p7image from "../../public/images/projects/image.png";
+import p8image from "../../public/images/projects/docbot.png";
 
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -142,6 +143,22 @@ const projects = () => {
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProjects
+                title="Document RAG Chatbot with LangChain"
+                img={p8image}
+                summary="An AI-powered chatbot that allows users to chat with their uploaded PDF files and documents. 
+            Built with FastAPI, LangChain, Groq LLM, and Pinecone vector store for Retrieval-Augmented Generation (RAG). 
+            The React + Vite frontend provides a modern chat interface with real-time messaging, source document display, 
+            error handling, smooth loading states, and responsive design. 
+            Integrated with GitHub Actions CI/CD pipeline for automated testing, linting, and deployment, 
+            ensuring reliable and production-ready builds."
+                link="https://github.com/Vaasu02/DocBot-RAG-UsingLangchain"
+                github="https://github.com/Vaasu02/DocBot-RAG-UsingLangchain"
+                type="Featured Project"
+              />
+            </div>
+
             <div className="col-span-12">
               <FeaturedProjects
                 title="Movie Ticket Booking Platform with Inngest"
