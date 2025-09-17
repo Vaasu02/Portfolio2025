@@ -14,6 +14,8 @@ import p5image from "../../public/images/projects/blog.png";
 import p6image from "../../public/images/projects/chat-application.png";
 import p7image from "../../public/images/projects/image.png";
 import p8image from "../../public/images/projects/docbot.png";
+import buyerLeadImage from "../../public/images/projects/buyintakelead.png";
+import clashVotingImage from "../../public/images/projects/clash.png";
 
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -143,6 +145,27 @@ const projects = () => {
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProjects
+                title="Clash Voting Platform"
+                img={clashVotingImage}
+                summary="A real-time voting platform built with Next.js 14, Node.js, and PostgreSQL. Features include user authentication, image uploads, real-time vote counting with Socket.io, comment system, email notifications, and background job processing. Built with TypeScript, Prisma ORM, Tailwind CSS, and designed for scalability with queue-based architecture using bullMQ."
+                link="https://github.com/Vaasu02/Clash-Voting-Platform"
+                github="https://github.com/Vaasu02"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProjects
+                title="Buyer Lead Intake App"
+                img={buyerLeadImage}
+                summary="A modern full-stack Next.js application designed for real estate professionals to efficiently capture, manage, and track buyer leads. Built with TypeScript, PostgreSQL, Prisma, and Tailwind CSS, the app features passwordless Magic Link authentication, role-based access, advanced search and filtering, CSV import/export, real-time validation, and field-level history tracking. Designed for scalability, responsiveness, and production-ready deployment with comprehensive error handling and a professional UI."
+                link="https://github.com/Vaasu02/Buyer-Lead-Intake"
+                github="https://github.com/Vaasu02"
+                type="Featured Project"
+              />
+            </div>
+
             <div className="col-span-12">
               <FeaturedProjects
                 title="Document RAG Chatbot with LangChain"
